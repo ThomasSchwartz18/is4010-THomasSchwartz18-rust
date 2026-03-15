@@ -15,8 +15,10 @@ fn main() {
     s.push(1);
     s.push(2);
     s.push(3);
-    println!("{}", s);           // requires Display impl
-    for item in s { println!("{}", item); }  // requires IntoIterator impl
+    println!("{}", s); // requires Display impl
+    for item in s {
+        println!("{}", item);
+    } // requires IntoIterator impl
 }
 
 // ============================================================================
