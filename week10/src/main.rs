@@ -118,8 +118,7 @@ fn problem_5() {
 }
 
 fn create_string() -> String {
-    let s = String::from("hello");
-    s
+    String::from("hello")
 }
 
 // ============================================================================
