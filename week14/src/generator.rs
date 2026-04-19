@@ -22,10 +22,9 @@ use rand::Rng;
 /// assert_eq!(pwd.len(), 12);
 /// ```
 pub fn generate_random(length: usize, use_symbols: bool) -> String {
-    let mut charset: Vec<char> =
-        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-            .chars()
-            .collect();
+    let mut charset: Vec<char> = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        .chars()
+        .collect();
     if use_symbols {
         charset.extend("!@#$%^&*".chars());
     }
